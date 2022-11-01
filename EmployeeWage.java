@@ -1,7 +1,6 @@
 package Assignment;
 
 public class EmployeeWage {
-
 	public static void main(String[] args) {
 		System.out.println("Welcome to Employee Wage Computation");
 		int wagePerHour=20;
@@ -18,7 +17,6 @@ public class EmployeeWage {
 				absent++;
 				employeeWagePerDay=0;
 				break;
-
 			case 1: 
 				present++;
 				employeeWagePerDay=wagePerHour*fullDayHour;
