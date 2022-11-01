@@ -8,15 +8,20 @@ public class EmployeeWage {
 		int FullDayHour=8;
 		int PartTimeHour=4;
 		int EmployeeWage = 0;
-		if (ran == 0) {
+		switch(ran)
+		{case 0: 
 			System.out.println("employee is Absent");
 			EmployeeWage=0;
-		} else if (ran == 1) {
+			break;
+		case 1: 
 			System.out.println("employee is Present Full Time");
 			EmployeeWage=WagePerHour*FullDayHour;
-		} else if (ran == 2) {
+			break;
+		case 2: 
 			System.out.println("employee is Present Part Time");
 			EmployeeWage=WagePerHour*PartTimeHour;
+			break;
+		default: System.out.println(" ");
 		}
 		System.out.println("EmployeeWage is  :"+EmployeeWage); 
 	}
